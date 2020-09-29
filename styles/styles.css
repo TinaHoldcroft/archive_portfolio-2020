@@ -8,26 +8,6 @@
   filter: drop-shadow(3px 3px 7px rgba(136, 165, 191, 0.48));
 }
 
-.frost-container {
-  position: absolute;
-  top: 0vh;
-  right: 0vw;
-  width: 50vw;
-  height: 100vh;
-  box-shadow: 3px 3px 7px rgba(136, 165, 191, 0.48);
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  z-index: 9;
-  color: #ffffff;
-}
-.frost-container h1 {
-  font-size: 52px;
-  font-family: century-gothic, sans-serif;
-  font-weight: 900;
-  padding-bottom: 3rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -63,44 +43,40 @@ body {
   background: #bdbdbd;
 }
 
-footer {
-  width: 100%;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 
-.SoMe-container {
+.line-white {
+  border-top: #ffffff 1px solid;
+  height: 1px;
+  width: 12rem;
+}
+
+.SoMe-header {
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 15vh;
+  width: 80vw;
+  top: 50vh;
+  left: 50vw;
+  margin-left: -25rem;
+  z-index: 9;
 }
-.SoMe-container .fa, .SoMe-container .fab {
-  margin: 5vw;
-  padding: 2rem;
-  font-size: 3em;
-  text-decoration: none;
+.SoMe-header i {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+.SoMe-header i:hover {
+  position: absolute;
+  z-index: 11;
+  transform: scale(1.5);
+  transition: 0.8s;
+  background-color: black;
+  padding: 1em;
   border-radius: 50%;
-  color: white;
-}
-.SoMe-container .fa:hover, .SoMe-container .fab:hover {
-  opacity: 0.7;
-}
-.SoMe-container .fa-linkedin {
-  background: #0072b1;
-}
-.SoMe-container .fa-linkedin:active {
-  color: #0072b1;
-  background: #ffffff;
-}
-.SoMe-container .fa-instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-.SoMe-container .fa-instagram:active, .SoMe-container .fa-github:active, .SoMe-container .fa-codepen:active {
-  color: #000000;
-  background: #ffffff;
-}
-.SoMe-container .fa-codepen, .SoMe-container .fa-github {
-  background: #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */
