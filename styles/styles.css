@@ -7,6 +7,9 @@
   background-size: cover;
   filter: drop-shadow(3px 3px 7px rgba(136, 165, 191, 0.48));
 }
+#roses h1, #roses h2 {
+  text-transform: uppercase;
+}
 
 * {
   margin: 0;
@@ -20,6 +23,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-family: montserrat, sans-serif;
 }
 
 .yellow-txt {
@@ -41,6 +45,26 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #bdbdbd;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+}
+
+.SoMe-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+.SoMe-footer i {
+  color: #242424;
+  font-size: 1.5em;
 }
 
 header {

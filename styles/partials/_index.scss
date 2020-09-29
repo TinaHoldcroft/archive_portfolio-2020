@@ -4,6 +4,9 @@
     position: relative;
     z-index: 1;
     background-size: cover;	
-    filter: drop-shadow(3px 3px 7px rgba(136, 165, 191, 0.48))
+    filter: drop-shadow(3px 3px 7px rgba(136, 165, 191, 0.48));
     //filter: brightness(0.90);
+    h1, h2 {
+        text-transform: uppercase;
+    }
 }
