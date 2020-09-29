@@ -46,7 +46,8 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
   color: #ffffff;
 }
 
@@ -57,12 +58,8 @@ header {
 }
 
 .SoMe-header {
-  position: absolute;
   display: flex;
-  width: 80vw;
-  top: 50vh;
-  left: 50vw;
-  margin-left: -25rem;
+  flex-flow: row wrap;
   z-index: 9;
 }
 .SoMe-header i {
