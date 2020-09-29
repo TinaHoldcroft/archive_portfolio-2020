@@ -11,6 +11,36 @@
   text-transform: uppercase;
 }
 
+.dubble-down {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.dubble-down i {
+  font-size: 3em;
+  opacity: 0.6;
+}
+.dubble-down i + i {
+  opacity: 1;
+  margin-top: -0.5em;
+}
+
+#index {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+}
+
+.circle {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+}
+
+.circle__aqua {
+  background-color: #00ffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,6 +103,22 @@ header {
   justify-content: space-evenly;
   flex-flow: column nowrap;
   color: #ffffff;
+}
+
+nav {
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 3rem;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #ffff00;
 }
 
 .line-white {

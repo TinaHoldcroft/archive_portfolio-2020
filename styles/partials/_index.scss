@@ -5,8 +5,29 @@
     z-index: 1;
     background-size: cover;	
     filter: drop-shadow(3px 3px 7px rgba(136, 165, 191, 0.48));
-    //filter: brightness(0.90);
-    h1, h2 {
-        text-transform: uppercase;
+    h1, h2 { text-transform: uppercase; }
+}
+.dubble-down {
+    display: flex;
+    flex-flow: column nowrap;
+    i {
+        font-size: 3em;
+        opacity: 0.6;
+    }
+    i + i {
+        opacity: 1;
+        margin-top: -0.5em;
     }
 }
+#index {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+}
+.circle {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+}
+.circle__aqua { background-color: #00ffff; }

@@ -5,6 +5,21 @@ header {
     flex-flow: column nowrap;
     color: #ffffff;
 }
+nav {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 3rem;
+        font-weight: 600;
+    }
+    a:hover {
+        color: #ffff00;
+    }
+}
 .line-white {
     border-top: #ffffff 1px solid;
     height: 1px;
