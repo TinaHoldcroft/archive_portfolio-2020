@@ -7,39 +7,24 @@ header {
 }
 nav {
     position: absolute;
-    top: 1.5rem;
+    top: 1.3rem;
     right: 0;
     a {
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
-        margin-right: 3rem;
+        margin-right: 2rem;
         font-weight: 600;
+        font-size: 0.8em;
     }
     a:hover {
         color: #ffff00;
     }
 }
 .line-white {
-    border-top: #ffffff 1px solid;
-    height: 1px;
+    border-top: #ffffff 2px solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     width: 12rem;
-}
-.SoMe-header {
-    display: flex;
-    flex-flow: row wrap;
-    z-index: 9;
-    i {
-        color: #ffffff;
-        font-size: 1.5em;
-    }
-    i:hover {
-        position: absolute;
-        z-index: 11;
-        transform: scale(1.5);
-        transition: 0.8s;
-        background-color: black;
-        padding: 1em;
-        border-radius: 50%;
-    }
 }
