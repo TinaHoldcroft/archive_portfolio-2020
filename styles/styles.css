@@ -132,6 +132,20 @@
   margin-left: -5rem;
 }
 
+.circle__red {
+  text-align: right;
+  background-color: #A5161F;
+}
+.circle__red .portfolio-item__h1 {
+  margin-left: -27rem;
+}
+.circle__red .portfolio-item__p {
+  margin-left: -13rem;
+}
+.circle__red .portfolio-item__link {
+  margin-left: -5rem;
+}
+
 .portfolio-item__h1 {
   position: absolute;
   left: 50vw;
@@ -164,6 +178,13 @@
 }
 
 .img__game-of-dice {
+  width: 27rem;
+  position: absolute;
+  margin-top: 8.3rem;
+  left: 53vw;
+}
+
+.img__mission-to-mars {
   width: 27rem;
   position: absolute;
   margin-top: 8.3rem;
