@@ -17,14 +17,5 @@ nav {
         font-weight: 600;
         font-size: 0.8em;
     }
-    a:hover {
-        color: #ffff00;
-    }
-}
-.line-white {
-    border-top: #ffffff 2px solid;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    width: 12rem;
+    a:hover { opacity: 0.7; }
 }

@@ -35,11 +35,24 @@
     i:hover {
         transform: scale(1.3);
         transition: 0.8s;
+
+    }
+    .fa-linkedin:hover {
+        background-color: #0072b1;
+    }
+    .fa-github:hover, .fa-codepen:hover {
         background-color: #000000;
     }
     hr {
         margin-top: 1.7rem;
     }
+}
+.line-white {
+    border-top: #ffffff 2px solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 12rem;
 }
 .dubble-down {
     display: flex;
@@ -47,27 +60,97 @@
     margin-top: 5rem;
     i {
         font-size: 3em;
-
     }
     i + i {
-
         margin-top: -0.5em;
     }
 }
-.flash-1 { animation: flash 3s linear infinite; }
-.flash-2 { animation: flash-2 3s linear infinite; }
-@keyframes flash { 40% { opacity: 0; } }
-@keyframes flash-2 { 60% { opacity: 0; } }
+.fade-1 { 
+    animation-name: fade;
+    animation-duration: 4s; //speed
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.3s; //start
+}
+.fade-2 { 
+    animation-name: fade;
+    animation-duration: 4s; // speed
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+    animation-delay: 0.3s; //start
+}
+@keyframes fade { 50% { opacity: 0; } }
 
 #index { //main
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-flow: column nowrap;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+}
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    gap: 8rem;
 }
 .circle {
-    height: 25rem;
-    width: 25rem;
+    height: 35rem;
+    width: 35rem;
     border-radius: 50%;
+    box-shadow: 9px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
 }
-.circle__aqua { background-color: #00ffff; }
+.circle__aqua { 
+    text-align: right;
+    background-color: #00ffff;
+    .portfolio-item__h1 {
+        margin-left: -27rem;
+    }
+    .portfolio-item__p {
+        margin-left: -13rem;
+    }
+    .portfolio-item__link {
+        margin-left: -5rem;
+    }
+}
+
+.portfolio-item__h1 {
+    position: absolute;
+    left: 50vw;
+    margin-top: 8rem;
+    font-size: 1.6em;
+}
+.portfolio-item__p {
+    position: absolute;
+    margin-top: 21rem;
+    left: 50vw;
+    font-size: 1.5em;
+    z-index: 11;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+    }
+    a:hover {
+        opacity: 0.5;
+    }
+}
+.img__computer {
+    width: 40rem;
+    position: absolute;
+    margin-top: 7rem;
+    left: 45vw;
+    z-index: 9;
+}
+.img__game-of-dice {
+    width: 27rem;
+    position: absolute;
+    margin-top: 8.3rem;
+    left: 53vw;
+}
