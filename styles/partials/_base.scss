@@ -13,11 +13,16 @@ body {
     overflow-x: hidden;
     font-family: montserrat, sans-serif;
 }
-.yellow-txt { color: #ffff00; }
 ::-webkit-scrollbar-thumb {
     background: #d3d3d3;
     border-radius: 3px; 
 }
-::-webkit-scrollbar { width: 12px; }
-::-webkit-scrollbar-track { border-radius: 3px; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { border-radius: 30px; }
 ::-webkit-scrollbar-thumb:hover { background: #bdbdbd; }
+.active {
+    font-weight: 900;
+}
+.txt__gray {
+    color: #919191;
+}

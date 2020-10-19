@@ -1,0 +1,83 @@
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    gap: 8rem;
+}
+.circle {
+    height: 35rem;
+    width: 35rem;
+    border-radius: 50%;
+    box-shadow: 9px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
+}
+.portfolio-item__h1 {
+    position: absolute;
+    left: 50vw;
+    margin-top: 8rem;
+    font-size: 1.6em;
+}
+.portfolio-item__p {
+    position: absolute;
+    margin-top: 21rem;
+    left: 50vw;
+    font-size: 1.5em;
+    z-index: 11;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+    }
+    a:hover {
+        opacity: 0.5;
+    }
+}
+.img__computer {
+    width: 40rem;
+    position: absolute;
+    margin-top: 7rem;
+    left: 45vw;
+    z-index: 9;
+}
+//---------------------------Game of Dice
+.circle__aqua { 
+    text-align: right;
+    background-color: #00ffff;
+    .portfolio-item__h1 {
+        margin-left: -27rem;
+    }
+    .portfolio-item__p {
+        margin-left: -13rem;
+    }
+    .portfolio-item__link {
+        margin-left: -5rem;
+    }
+}
+
+.img__game-of-dice {
+    width: 27rem;
+    position: absolute;
+    margin-top: 8.3rem;
+    left: 53vw;
+}
+//---------------------------Mission to Mars
+.circle__red { 
+    text-align: right;
+    background-color: #A5161F;
+    .portfolio-item__h1 {
+        margin-left: -27rem;
+    }
+    .portfolio-item__p {
+        margin-left: -13rem;
+    }
+    .portfolio-item__link {
+        margin-left: -5rem;
+    }
+}
+.img__mission-to-mars {
+    width: 27rem;
+    position: absolute;
+    margin-top: 8.3rem;
+    left: 53vw;
+}
+//---------------------------
