@@ -244,4 +244,22 @@ nav a:hover {
   left: 17.5vw;
 }
 
+.bg__mission-to-mars {
+  background-color: #A5161F;
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#mission-to-mars {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  margin-left: 1.4rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
