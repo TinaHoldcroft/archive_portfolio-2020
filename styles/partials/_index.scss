@@ -8,11 +8,11 @@
 }
 #img__geometric {
     position: absolute;
-    height: 94vh;
+    height: 92vh;
     top: 0;
-    margin-top: 3vh;
+    margin-top: 1.5rem;
     right: 0;
-    margin-right: 3vh;
+    margin-right: 1rem;
     filter:drop-shadow(2px 2px 5px gray)
 }
 /*#img__geometric:hover {
@@ -23,10 +23,17 @@
     flex-direction: column;
     gap: 1rem;
     position: absolute;
-    left: 2.5vh;
-    top: 31rem;
+    left: 1.5rem;
+    top: 28rem;
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        line-height: 1.25em;
+    }
     .txt__gray {
         margin-bottom: -0.8rem;
+
     }
     span {
         color: #D90F6D;

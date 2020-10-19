@@ -7,13 +7,13 @@ header {
 }
 nav {
     position: absolute;
-    top: 1.3rem;
+    top: 1.2rem;
     left: 0;
     a {
         color: #000000;
         text-decoration: none;
         text-transform: uppercase;
-        margin-left: 2.5vh;
+        margin-left: 1.5rem;
         font-size: 0.7em;
     }
     a:hover { opacity: 0.7; }
@@ -27,7 +27,7 @@ nav {
         position: relative;
         z-index: 11;
         color: #000000;
-        font-size: 1em;
+        font-size: 1.1em;
         padding: 0.6em;
         border-radius: 50%;
     }
@@ -40,7 +40,7 @@ nav {
         background-color: #0072b1;
     }
     .fa-github-alt {
-        font-size: 1.05em;
+        font-size: 1.15em;
     }
     .fa-github-alt:hover {
         background-color: #24292e
