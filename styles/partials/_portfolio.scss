@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-flow: column nowrap;
-    gap: 8rem;
+    gap: 8.5rem;
 }
 .circle {
     height: 35rem;
@@ -32,13 +32,6 @@
         opacity: 0.5;
     }
 }
-.img__computer {
-    width: 40rem;
-    position: absolute;
-    margin-top: 7rem;
-    left: 45vw;
-    z-index: 9;
-}
 //---------------------------Game of Dice
 .circle__aqua { 
     text-align: right;
@@ -52,6 +45,13 @@
     .portfolio-item__link {
         margin-left: -5rem;
     }
+    .img__computer {
+        width: 40rem;
+        position: absolute;
+        margin-top: 7rem;
+        left: 45vw;
+        z-index: 9;
+    }
 }
 
 .img__game-of-dice {
@@ -62,22 +62,29 @@
 }
 //---------------------------Mission to Mars
 .circle__red { 
-    text-align: right;
+    text-align: left;
     background-color: #A5161F;
     .portfolio-item__h1 {
-        margin-left: -27rem;
+        margin-left: 3rem;
     }
     .portfolio-item__p {
-        margin-left: -13rem;
+        margin-left: 3rem;
     }
     .portfolio-item__link {
-        margin-left: -5rem;
+        margin-left: 5rem;
+    }
+    .img__computer {
+        width: 40rem;
+        position: absolute;
+        margin-top: 7rem;
+        left: 10vw;
+        z-index: 9;
     }
 }
 .img__mission-to-mars {
     width: 27rem;
     position: absolute;
     margin-top: 8.3rem;
-    left: 53vw;
+    left: 17.5vw;
 }
 //---------------------------
