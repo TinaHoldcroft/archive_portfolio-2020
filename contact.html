@@ -28,21 +28,26 @@
 		</header>
 
 		<main id="contact">
-            <form action="mailto:tmholdcroft@gmail.com" method="POST" enctype="text/plain" target="_blank">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="E-mail">
-                <input type="phone" name="phone" placeholder="Phone">
-                <textarea type="text" name="text" placeholder="Message"></textarea>
-                <input type="submit" value="Contact">
-            </form>
+			<h1>Lets <span>Talk</span>.</h1>
+			<div class="form-wrapper">
+				<form action="mailto:tmholdcroft@gmail.com?&subject=Lets%20Talk" method="POST" enctype="text/plain" target="_blank">
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="email" placeholder="E-mail" required>
+					<input type="phone" name="phone" placeholder="Phone" required>
+					<textarea type="text" name="message " placeholder="Message" required></textarea>
+					<input type="submit" value="&#8594;">
+				</form>
+			</div>
 		</main>
 
-		<footer>
-            <div class="SoMe">
+		<footer class="contact-footer">
+			<p> &copy; TinaMary.com 2020 <br></p>
+			<div class="SoMe">
 				<div><a title="GitHub" target="_blank" href="https://github.com/TinaHoldcroft"><i class="fab fa-github-alt"></i></a></div>
 				<div><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/tina-holdcroft"><i class="fa fa-linkedin"></i></a></div>
 				<div><a title="Codepen" target="_blank" href="https://codepen.io/tmholdcroft"><i class="fab fa-codepen"></i></a></div>
+				<div><a title="Instagram" target="_blank" href="https://www.instagram.com/tmholdcroft/"><i class="fab fa-instagram"></i></a></div>	
 			</div>
-		</footer>
+        </footer>
 	</body>	
 </html>

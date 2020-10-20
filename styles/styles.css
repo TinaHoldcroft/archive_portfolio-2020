@@ -1,6 +1,4 @@
 @import url("https://use.typekit.net/rkp1fwe.css");
-@import url("https://use.typekit.net/rkp1fwe.css");
-@import url("https://use.typekit.net/rkp1fwe.css");
 #index {
   display: flex;
   align-items: center;
@@ -48,116 +46,89 @@
   margin-left: -0.6em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+#contact {
+  background-image: url(images/map.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: montserrat, sans-serif;
+  height: 100vh;
+  z-index: -1;
+}
+#contact h1 {
+  font-size: 3em;
+  padding-top: 15rem;
+  padding-left: 7rem;
+}
+#contact h1 span {
+  color: #D90F6D;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #d3d3d3;
-  border-radius: 3px;
+.form-wrapper {
+  background-color: #ffffff;
+  position: absolute;
+  right: 10rem;
+  top: 8rem;
+  width: 22rem;
+  height: 35rem;
+  border: solid #ffffff 3rem;
+  z-index: 9;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 30px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #bdbdbd;
-}
-
-.no-scroll {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.active {
-  font-weight: 900;
-}
-
-.txt__gray {
-  color: #919191;
-}
-.txt__gray a {
-  text-decoration: none;
-  color: #919191;
-}
-
-.txt__red {
-  color: #A5161F;
-}
-
-.txt__bold {
-  font-weight: 900;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+form {
   width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+}
+form input, form textarea {
   font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  border-bottom: solid 1px #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  line-height: 2.5em;
+}
+form ::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+form textarea, form input[type=text], form input[type=email], form input[type=phone] {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 1rem;
+}
+form input[type=submit] {
+  background-color: #D90F6D;
+  color: #ffffff;
+  margin-top: 4rem;
+  margin-left: 7rem;
+  border-bottom: none;
+  font-size: 1.5em;
+  width: 75%;
+  text-align: right;
+  line-height: 0rem;
+  padding: 1.5rem;
+}
+form input[type=submit]:focus {
+  background-color: #E8EAEC;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #d3d3d3;
-  border-radius: 3px;
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 8rem;
+  background-color: #E8EAEC;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 0.9em;
 }
-
-::-webkit-scrollbar {
-  width: 10px;
+.contact-footer p {
+  padding-left: 0.6em;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 30px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #bdbdbd;
-}
-
-.no-scroll {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.active {
-  font-weight: 900;
-}
-
-.txt__gray {
-  color: #919191;
-}
-.txt__gray a {
-  text-decoration: none;
-  color: #919191;
-}
-
-.txt__red {
-  color: #A5161F;
-}
-
-.txt__bold {
-  font-weight: 900;
+.contact-footer .SoMe {
+  align-self: flex-start;
 }
 
 .bg__mission-to-mars {
@@ -350,6 +321,9 @@ nav a:hover {
 }
 .SoMe .fa-codepen:hover {
   background-color: #1e1f26;
+}
+.SoMe .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .portfolio-container {
