@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/rkp1fwe.css");
+@import url("https://use.typekit.net/rkp1fwe.css");
+@import url("https://use.typekit.net/rkp1fwe.css");
 #index {
   display: flex;
   align-items: center;
@@ -44,6 +46,189 @@
 .index-header-txt .SoMe {
   justify-content: flex-start;
   margin-left: -0.6em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: montserrat, sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.active {
+  font-weight: 900;
+}
+
+.txt__gray {
+  color: #919191;
+}
+.txt__gray a {
+  text-decoration: none;
+  color: #919191;
+}
+
+.txt__red {
+  color: #A5161F;
+}
+
+.txt__bold {
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: montserrat, sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.active {
+  font-weight: 900;
+}
+
+.txt__gray {
+  color: #919191;
+}
+.txt__gray a {
+  text-decoration: none;
+  color: #919191;
+}
+
+.txt__red {
+  color: #A5161F;
+}
+
+.txt__bold {
+  font-weight: 900;
+}
+
+.bg__mission-to-mars {
+  background-color: #A5161F;
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#mission-to-mars {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  margin-left: 2rem;
+}
+
+.mission-to-mars__txt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  margin-top: calc(50vh - 12.5rem);
+}
+.mission-to-mars__txt h1 {
+  font-size: 3em;
+}
+.mission-to-mars__txt p {
+  max-width: 35vw;
+}
+.mission-to-mars__txt .button-container {
+  flex-flow: row wrap;
+}
+.mission-to-mars__txt .button-container i {
+  font-size: 1.8em;
+  color: #ffffff;
+}
+.mission-to-mars__txt .button-container button {
+  border-radius: 10px;
+  background: #A5161F;
+  border: none;
+  outline: none;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.mission-to-mars__txt .button-container button:hover {
+  transform: scale(0.95);
+}
+.mission-to-mars__txt .button-container button:active {
+  transform: scale(1.05);
+}
+
+.mission-to-mars__img {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#img__astronaut {
+  height: 90vh;
+  position: absolute;
+  right: 50vw;
+  margin-right: -38rem;
+  top: 5vh;
+  filter: grayscale(20%);
 }
 
 * {
@@ -259,77 +444,6 @@ nav a:hover {
   position: absolute;
   margin-top: 8.3rem;
   left: 17.5vw;
-}
-
-.bg__mission-to-mars {
-  background-color: #A5161F;
-  height: 100vh;
-  width: 50vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-#mission-to-mars {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-  margin-left: 2rem;
-}
-
-.mission-to-mars__txt {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-flow: column nowrap;
-  gap: 0.5rem;
-  margin-top: calc(50vh - 12.5rem);
-}
-.mission-to-mars__txt h1 {
-  font-size: 3em;
-}
-.mission-to-mars__txt p {
-  max-width: 35vw;
-}
-.mission-to-mars__txt .button-container {
-  flex-flow: row wrap;
-}
-.mission-to-mars__txt .button-container i {
-  font-size: 1.8em;
-  color: #ffffff;
-}
-.mission-to-mars__txt .button-container button {
-  border-radius: 10px;
-  background: #A5161F;
-  border: none;
-  outline: none;
-  height: 3rem;
-  width: 3rem;
-  margin-right: 1rem;
-  margin-top: 2rem;
-  cursor: pointer;
-}
-.mission-to-mars__txt .button-container button:hover {
-  transform: scale(0.95);
-}
-.mission-to-mars__txt .button-container button:active {
-  transform: scale(1.05);
-}
-
-.mission-to-mars__img {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-#img__astronaut {
-  height: 90vh;
-  position: absolute;
-  right: 50vw;
-  margin-right: -38rem;
-  top: 5vh;
-  filter: grayscale(20%);
 }
 
 /*# sourceMappingURL=styles.css.map */
