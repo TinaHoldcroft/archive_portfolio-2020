@@ -17,6 +17,26 @@
   margin-right: 1rem;
   filter: drop-shadow(2px 2px 5px #808080);
 }
+@media only screen and (max-width: 600px) {
+  #img__geometric {
+    display: none;
+  }
+}
+
+#img__geometric-phone {
+  position: absolute;
+  width: 92vw;
+  top: 0;
+  margin-top: 3rem;
+  right: 0;
+  margin-right: 1rem;
+  filter: drop-shadow(2px 2px 5px #808080);
+}
+@media only screen and (min-width: 600px) {
+  #img__geometric-phone {
+    display: none;
+  }
+}
 
 .index-header-txt {
   display: flex;
@@ -30,6 +50,7 @@
   .index-header-txt {
     gap: 0.7rem;
     left: 1rem;
+    bottom: 0.5rem;
   }
 }
 .index-header-txt h1 {
@@ -560,6 +581,7 @@ nav {
   nav {
     left: 50vw;
     margin-left: -11.5rem;
+    top: 0.8rem;
   }
 }
 nav a {
@@ -619,6 +641,11 @@ nav a:hover {
   justify-content: space-evenly;
   flex-flow: column nowrap;
   gap: 8.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .portfolio-container {
+    display: none;
+  }
 }
 
 .circle {
