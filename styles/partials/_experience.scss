@@ -6,7 +6,6 @@
     flex-flow: column nowrap;
     width: 100vw;
 }
-
 .card-wrapper {
     height: 50vh;
     display: flex;
@@ -18,12 +17,12 @@
 .card-container {
     margin-top: 10rem;
     background-color: transparent;
-    width: 10rem;
+    width: 15rem;
     height: 10rem;
     perspective: 100rem;
     margin: 1.5rem;
-  }
-  .cards {
+}
+.cards {
     position: relative;
     width: 100%;
     height: 100%;
@@ -31,22 +30,20 @@
     transform-style: preserve-3d;
     z-index: 1;
     transition: width 0.5s, height 0.9s, transform 1.4s;
-  }
-  @-moz-document url-prefix() {
+}
+@-moz-document url-prefix() {
     .cards {
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
-  }
-  .card-container:hover {
-    z-index: 9;
-  }
-  .card-container:hover .cards {
+}
+.card-container:hover { z-index: 9; }
+.card-container:hover .cards {
     transform: rotateY(180deg);
-
-  }
-  
-  .card-front {
+    width: calc(100% + 8rem);
+    height: calc(100% + 17rem);
+ }
+.card-front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -54,11 +51,28 @@
     -webkit-backface-visibility: hidden;
     border-radius: 30px;
     box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
-  }
-  .card-back {
+    i {
+        font-size: 7em;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: #ffffff;
+    }
+}
+.card__coding { background-color: #870079; }
+.card__design { background-color: #D90F6D; }
+.card__project { background-color: #FF6759; }
+.card-back {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
     width: 100%;
     height: 100%;
+    background-color: #ffffff;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     border-radius: 30px;
@@ -66,13 +80,16 @@
     margin-left: 5.5rem;
     margin-top: -5vh;
     box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
-  }
-  .card-back h3 {
-    margin-top: 1rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
+    p {
+        font-size: 0.8em;
+        max-width: 75%;
+    }
+    .fab { font-size: 3em; }
+    a:hover { opacity: 0.6; }
+    .github-square_code { color: #870079; }
+    .github-square__design { color: #D90F6D; }
+    .fa-linkedin { color: #FF6759; }
+}
 .timeline-wrapper  {
     max-width: 60vw;
     color: #4d4c59;

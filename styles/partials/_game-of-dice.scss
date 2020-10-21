@@ -1,0 +1,79 @@
+.body__game-of-dice {
+    background-color: #191919;
+    color:#ffffff;
+}
+.bg__game-of-dice {
+    background-color: #242424;
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+#game-of-dice {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-left: 2rem;
+}
+.game-of-dice__txt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    margin-top: calc(50vh - 12.5rem);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    margin-top: calc(50vh - 12.5rem);
+    h1 { font-size: 3em; }
+    p { max-width: 35vw; }
+    .button-container {
+        flex-flow: row wrap;
+        i {
+            font-size: 1.8em;
+            color: #242424;
+        }
+        button {
+            border-radius: 10px;
+            background: #00ffff;
+            border: none;
+            outline: none;
+            height: 3rem;
+            width: 3rem;
+            margin-right: 1rem;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+        button:hover { transform: scale(0.95); }
+        button:active { transform: scale(1.05); }
+    }
+}
+.game-of-dice__img {
+    display: flex;
+    flex-flow: column nowrap;
+}
+#img__dice {
+    height: 15rem;
+    position: absolute;
+    right: 50vw;
+    margin-right: -38rem;
+    top: 50vh;
+    margin-top: -10rem;
+    filter: grayscale(20%);
+    transform: rotate(-130deg);
+}
+.fa-play-circle {
+    font-size: 20em;
+    color: #00ffff;
+    position: absolute;
+    right: 50vw;
+    margin-right: -32rem;
+    top: 50vh;
+    margin-top: -10rem;
+}

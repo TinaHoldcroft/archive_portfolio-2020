@@ -21,12 +21,8 @@
     flex-flow: column nowrap;
     gap: 0.5rem;
     margin-top: calc(50vh - 12.5rem);
-    h1 {
-        font-size: 3em;
-    }
-    p {
-        max-width: 35vw;
-    }
+    h1 { font-size: 3em; }
+    p { max-width: 35vw; }
     .button-container {
         flex-flow: row wrap;
         i {

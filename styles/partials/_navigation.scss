@@ -8,12 +8,17 @@ nav {
     position: absolute;
     top: 1.5rem;
     left: 0;
+    @media only screen and (max-width: 600px) { 
+        left: 50vw;
+        margin-left: -11.5rem;
+    }
     a {
         color: #000000;
         text-decoration: none;
         text-transform: uppercase;
         margin-left: 2rem;
         font-size: 0.7em;
+        @media only screen and (max-width: 600px) { margin-left: 1.5rem; }
     }
     a:hover { opacity: 0.7; }
 }
@@ -35,19 +40,9 @@ nav {
         transition: 0.8s;
         color: #ffffff;
     }
-    .fa-linkedin:hover {
-        background-color: #0072b1;
-    }
-    .fa-github-alt {
-        font-size: 1.15em;
-    }
-    .fa-github-alt:hover {
-        background-color: #24292e
-    }
-    .fa-codepen:hover {
-        background-color: #1e1f26;
-    }
-    .fa-instagram:hover {
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    }
+    .fa-linkedin:hover { background-color: #0072b1; }
+    .fa-github-alt { font-size: 1.15em; }
+    .fa-github-alt:hover { background-color: #24292e; }
+    .fa-codepen:hover { background-color: #1e1f26; }
+    .fa-instagram:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
 }

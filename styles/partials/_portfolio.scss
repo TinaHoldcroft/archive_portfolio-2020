@@ -28,23 +28,14 @@
         cursor: pointer;
         color: #000000;
     }
-    a:hover {
-        opacity: 0.5;
-    }
+    a:hover { opacity: 0.5; }
 }
-//---------------------------Game of Dice
-.circle__aqua { 
+.circle__aqua { //-------------------------------------Game of Dice
     text-align: right;
     background-color: #00ffff;
-    .portfolio-item__h1 {
-        margin-left: -27rem;
-    }
-    .portfolio-item__p {
-        margin-left: -13rem;
-    }
-    .portfolio-item__link {
-        margin-left: -5rem;
-    }
+    .portfolio-item__h1 { margin-left: -27rem; }
+    .portfolio-item__p { margin-left: -13rem; }
+    .portfolio-item__link { margin-left: -5rem; }
     .img__computer {
         width: 40rem;
         position: absolute;
@@ -53,26 +44,18 @@
         z-index: 9;
     }
 }
-
 .img__game-of-dice {
     width: 27rem;
     position: absolute;
     margin-top: 8.3rem;
     left: 53vw;
 }
-//---------------------------Mission to Mars
-.circle__red { 
+.circle__red { //---------------------------------------Mission to Mars
     text-align: left;
     background-color: #A5161F;
-    .portfolio-item__h1 {
-        margin-left: 3rem;
-    }
-    .portfolio-item__p {
-        margin-left: 3rem;
-    }
-    .portfolio-item__link {
-        margin-left: 5rem;
-    }
+    .portfolio-item__h1 { margin-left: 3rem; }
+    .portfolio-item__p { margin-left: 3rem; }
+    .portfolio-item__link { margin-left: 5rem; }
     .img__computer {
         width: 40rem;
         position: absolute;
@@ -87,4 +70,3 @@
     margin-top: 8.3rem;
     left: 17.5vw;
 }
-//---------------------------
