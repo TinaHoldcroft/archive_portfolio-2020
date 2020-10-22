@@ -4,21 +4,26 @@
     justify-content: space-evenly;
     flex-flow: column nowrap;
     gap: 8.5rem;
-    @media only screen and (max-width: 600px) { 
-        display: none;
-    }
 }
 .circle {
     height: 35rem;
     width: 35rem;
     border-radius: 50%;
     box-shadow: 9px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
+    @media only screen and (max-width: 600px) { 
+        height: 65vw;
+        width: 65vw;
+    }
 }
 .portfolio-item__h1 {
     position: absolute;
     left: 50vw;
     margin-top: 8rem;
     font-size: 1.6em;
+    @media only screen and (max-width: 600px) { 
+        font-size: 1em;
+
+    }
 }
 .portfolio-item__p {
     position: absolute;
@@ -26,6 +31,8 @@
     left: 50vw;
     font-size: 1.5em;
     z-index: 11;
+    
+    @media only screen and (max-width: 600px) { display: none; }
     a {
         text-decoration: none;
         cursor: pointer;
@@ -36,7 +43,10 @@
 .circle__aqua { //-------------------------------------Game of Dice
     text-align: right;
     background-color: #00ffff;
-    .portfolio-item__h1 { margin-left: -27rem; }
+    .portfolio-item__h1 { 
+        margin-left: -27rem; 
+        @media only screen and (max-width: 600px) { margin-left: -7rem; }
+    }
     .portfolio-item__p { margin-left: -13rem; }
     .portfolio-item__link { margin-left: -5rem; }
     .img__computer {
@@ -45,6 +55,8 @@
         margin-top: 7rem;
         left: 45vw;
         z-index: 9;
+        
+    @media only screen and (max-width: 600px) { display: none; }
     }
 }
 .img__game-of-dice {
@@ -52,6 +64,8 @@
     position: absolute;
     margin-top: 8.3rem;
     left: 53vw;
+    
+    @media only screen and (max-width: 600px) { display: none; }
 }
 .circle__red { //---------------------------------------Mission to Mars
     text-align: left;
@@ -65,6 +79,8 @@
         margin-top: 7rem;
         left: 10vw;
         z-index: 9;
+        
+    @media only screen and (max-width: 600px) { display: none; }
     }
 }
 .img__mission-to-mars {
@@ -72,4 +88,6 @@
     position: absolute;
     margin-top: 8.3rem;
     left: 17.5vw;
+    
+    @media only screen and (max-width: 600px) { display: none; }
 }
