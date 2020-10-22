@@ -65,6 +65,11 @@
 .index-header-txt .txt__gray {
   margin-bottom: -0.8rem;
 }
+@media only screen and (max-width: 600px) {
+  .index-header-txt .txt__gray {
+    display: none;
+  }
+}
 .index-header-txt .SoMe {
   justify-content: flex-start;
   margin-left: -0.6em;
