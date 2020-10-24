@@ -7,12 +7,14 @@
     width: 100vw;
 }
 .card-wrapper {
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-flow: row wrap;
+    height: 100%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 .card-container {
     margin-top: 10rem;
@@ -91,8 +93,10 @@
     .fa-linkedin { color: #FF6759; }
 }
 .timeline-wrapper  {
-    max-width: 60vw;
     color: #4d4c59;
+    @media only screen and (max-width: 600px) { 
+        margin: 1rem;
+    }
 }
 .timeline {
 	position: relative;
@@ -123,10 +127,19 @@
         box-sizing: border-box;
         transform: translate(50%,-50%);
     }
-    h3 { font-size: 2em; }
+    h3 { 
+        font-size: 2em;
+        @media only screen and (max-width: 600px) { 
+            font-size: 1.5em;
+        }
+    }
     p {
         font-size: 1em;
         line-height: 1.5em;
+        @media only screen and (max-width: 600px) { 
+            font-size: 0.8em;
+            line-height: 1em;
+        }
     }
     li:nth-child(2n) {
         align-self: flex-end;

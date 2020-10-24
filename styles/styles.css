@@ -89,16 +89,29 @@
   padding-top: 15rem;
   padding-left: 7rem;
 }
+@media only screen and (max-width: 830px) {
+  #contact h1 {
+    display: none;
+  }
+}
 
 .form-wrapper {
   background-color: #ffffff;
   position: absolute;
-  right: 10rem;
+  right: 15vw;
   top: 8rem;
   width: 22rem;
   height: 30rem;
   border: solid #ffffff 3rem;
   z-index: 9;
+}
+@media only screen and (max-width: 830px) {
+  .form-wrapper {
+    top: 50vh;
+    margin-top: -15rem;
+    right: 50vw;
+    margin-right: -11rem;
+  }
 }
 
 form {
@@ -152,12 +165,14 @@ form input[type=submit]:hover {
 }
 
 .card-wrapper {
-  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  height: 100%;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .card-container {
@@ -264,8 +279,12 @@ form input[type=submit]:hover {
 }
 
 .timeline-wrapper {
-  max-width: 60vw;
   color: #4d4c59;
+}
+@media only screen and (max-width: 600px) {
+  .timeline-wrapper {
+    margin: 1rem;
+  }
 }
 
 .timeline {
@@ -301,9 +320,20 @@ form input[type=submit]:hover {
 .timeline h3 {
   font-size: 2em;
 }
+@media only screen and (max-width: 600px) {
+  .timeline h3 {
+    font-size: 1.5em;
+  }
+}
 .timeline p {
   font-size: 1em;
   line-height: 1.5em;
+}
+@media only screen and (max-width: 600px) {
+  .timeline p {
+    font-size: 0.8em;
+    line-height: 1em;
+  }
 }
 .timeline li:nth-child(2n) {
   align-self: flex-end;
@@ -659,6 +689,14 @@ nav a:hover {
   }
 }
 
+.img__computer {
+  width: 40rem;
+  position: absolute;
+  margin-top: 7rem;
+  left: 50vw;
+  z-index: 9;
+}
+
 .portfolio-item__h1 {
   position: absolute;
   left: 50vw;
@@ -711,28 +749,7 @@ nav a:hover {
   margin-left: -5rem;
 }
 .circle__aqua .img__computer {
-  width: 40rem;
-  position: absolute;
-  margin-top: 7rem;
-  left: 45vw;
-  z-index: 9;
-}
-@media only screen and (max-width: 600px) {
-  .circle__aqua .img__computer {
-    display: none;
-  }
-}
-
-.img__game-of-dice {
-  width: 27rem;
-  position: absolute;
-  margin-top: 8.3rem;
-  left: 53vw;
-}
-@media only screen and (max-width: 600px) {
-  .img__game-of-dice {
-    display: none;
-  }
+  margin-left: -5rem;
 }
 
 .circle__red {
@@ -740,37 +757,16 @@ nav a:hover {
   background-color: #A5161F;
 }
 .circle__red .portfolio-item__h1 {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 .circle__red .portfolio-item__p {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 .circle__red .portfolio-item__link {
-  margin-left: 5rem;
+  margin-left: 4rem;
 }
 .circle__red .img__computer {
-  width: 40rem;
-  position: absolute;
-  margin-top: 7rem;
-  left: 10vw;
-  z-index: 9;
-}
-@media only screen and (max-width: 600px) {
-  .circle__red .img__computer {
-    display: none;
-  }
-}
-
-.img__mission-to-mars {
-  width: 27rem;
-  position: absolute;
-  margin-top: 8.3rem;
-  left: 17.5vw;
-}
-@media only screen and (max-width: 600px) {
-  .img__mission-to-mars {
-    display: none;
-  }
+  margin-left: -35rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
