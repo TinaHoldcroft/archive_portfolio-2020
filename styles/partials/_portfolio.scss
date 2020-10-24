@@ -4,6 +4,9 @@
     justify-content: space-evenly;
     flex-flow: column nowrap;
     gap: 8.5rem;
+    @media only screen and (max-width: 600px) { 
+        gap: 5rem;
+    }
 }
 .circle {
     height: 35rem;
@@ -11,8 +14,8 @@
     border-radius: 50%;
     box-shadow: 9px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
     @media only screen and (max-width: 600px) { 
-        height: 65vw;
-        width: 65vw;
+        height: 20rem;
+        width: 20rem;
     }
 }
 .img__computer {
@@ -21,16 +24,18 @@
     margin-top: 7rem;
     left: 50vw;
     z-index: 9;
+    @media only screen and (max-width: 600px) { 
+        margin-top: 4.5rem;
+        width: 20rem;
+    }
 }
+.img__computer:hover  { opacity: 0.9; }
 .portfolio-item__h1 {
     position: absolute;
     left: 50vw;
     margin-top: 8rem;
     font-size: 1.6em;
-    @media only screen and (max-width: 600px) { 
-        font-size: 1em;
-
-    }
+    @media only screen and (max-width: 600px) { display: none; }
 }
 .portfolio-item__p {
     position: absolute;
@@ -38,7 +43,6 @@
     left: 50vw;
     font-size: 1.5em;
     z-index: 11;
-    
     @media only screen and (max-width: 600px) { display: none; }
     a {
         text-decoration: none;
@@ -56,7 +60,12 @@
     }
     .portfolio-item__p { margin-left: -13rem; }
     .portfolio-item__link { margin-left: -5rem; }
-    .img__computer { margin-left: -5rem; }
+    .img__computer { 
+        margin-left: -5rem; 
+        @media only screen and (max-width: 600px) { 
+            margin-left: -10rem; 
+        }
+    }
 }
 .circle__red { //left
     text-align: left;
@@ -64,5 +73,10 @@
     .portfolio-item__h1 { margin-left: 2rem; }
     .portfolio-item__p { margin-left: 2rem; }
     .portfolio-item__link { margin-left: 4rem; }
-    .img__computer { margin-left: -35rem; }
+    .img__computer { 
+        margin-left: -35rem; 
+        @media only screen and (max-width: 600px) { 
+            margin-left: -10rem; 
+        }
+    }
 }
