@@ -6,6 +6,7 @@
     top: 0;
     right: 0;
     z-index: -1;
+    @media only screen and (max-width: 600px) { display: none; }
 }
 #mission-to-mars {
     display: flex;
@@ -21,8 +22,14 @@
     flex-flow: column nowrap;
     gap: 0.5rem;
     margin-top: calc(50vh - 12.5rem);
-    h1 { font-size: 3em; }
-    p { max-width: 35vw; }
+    h1 { 
+        font-size: 3em; 
+        @media only screen and (max-width: 600px) { font-size: 2em; }
+    }
+    p { 
+        max-width: 35vw;
+        @media only screen and (max-width: 600px) { max-width: 80vw; }
+    }
     .button-container {
         flex-flow: row wrap;
         i {
@@ -47,6 +54,7 @@
 .mission-to-mars__img {
     display: flex;
     flex-flow: column nowrap;
+    @media only screen and (max-width: 600px) { display: none; }
 }
 #img__astronaut {
     height: 90vh;
@@ -55,4 +63,5 @@
     margin-right: -38rem;
     top: 5vh;
     filter: grayscale(20%);
+    @media only screen and (max-width: 600px) { display: none; }
 }
