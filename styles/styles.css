@@ -558,6 +558,9 @@ form input[type=submit]:hover {
     display: none;
   }
 }
+.game-of-dice__img a:hover {
+  opacity: 0.8;
+}
 
 .fa-play-circle {
   font-size: 20em;

@@ -59,6 +59,9 @@
     display: flex;
     flex-flow: column nowrap;
     @media only screen and (max-width: 600px) { display: none; }
+    a:hover {
+        opacity: 0.8;
+    }
 }
 .fa-play-circle {
     font-size: 20em;
