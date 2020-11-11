@@ -49,9 +49,11 @@
     }
     a:hover { opacity: 0.5; }
 }
-.circle__aqua { //right
+.circle__aqua { background-color: #00ffff; }
+.circle__red { background-color: #A5161F; }
+.circle__orange { background-color: #ffa500; }
+.circle__aqua, .circle__orange { //right
     text-align: right;
-    background-color: #00ffff;
     .portfolio-item__h1 { 
         margin-left: -27rem; 
         @media only screen and (max-width: 600px) { margin-left: -7rem; }
@@ -65,7 +67,6 @@
 }
 .circle__red { //left
     text-align: left;
-    background-color: #A5161F;
     .portfolio-item__h1 { margin-left: 2rem; }
     .portfolio-item__p { margin-left: 2rem; }
     .portfolio-item__link { margin-left: 4rem; }
