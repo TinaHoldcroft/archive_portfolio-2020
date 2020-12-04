@@ -569,7 +569,7 @@ nav a:hover {
 }
 
 .img__computer:hover {
-  opacity: 0.9;
+  transform: scale(0.99);
 }
 
 .portfolio-item__h1 {
