@@ -50,9 +50,11 @@
     a:hover { opacity: 0.5; }
 }
 .circle__aqua { background-color: #00ffff; }
+.circle__teal { background-color: #31666B; }
+.circle__navy { background-color: #233846; }
 .circle__red { background-color: #A5161F; }
 .circle__orange { background-color: #ffa500; }
-.circle__teal { background-color: #31666B; }
+
 .circle__aqua, .circle__orange { //right
     text-align: right;
     .portfolio-item__h1 { 
@@ -66,7 +68,7 @@
         @media only screen and (max-width: 600px) { margin-left: -10rem; }
     }
 }
-.circle__red, .circle__teal { //left
+.circle__red, .circle__teal, .circle__navy { //left
     text-align: left;
     .portfolio-item__h1 { margin-left: 2rem; }
     .portfolio-item__p { margin-left: 2rem; }
