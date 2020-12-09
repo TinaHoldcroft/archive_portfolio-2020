@@ -1,5 +1,5 @@
 .bg__holidaze {
-    background-color: #1E313E;
+    background-color: #335063;
     height: 100vh;
     width: 50vw;
     position: absolute;
@@ -38,7 +38,7 @@
         }
         button {
             border-radius: 10px;
-            background: #1E313E;
+            background: #335063;
             border: none;
             outline: none;
             height: 3rem;
@@ -56,12 +56,12 @@
     flex-flow: column nowrap;
     @media only screen and (max-width: 600px) { display: none; }
 }
-#img__astronaut {
-    height: 90vh;
+#img__bryggen {
+    height: 80vh;
     position: absolute;
     right: 50vw;
-    margin-right: -38rem;
-    top: 5vh;
+    margin-right: -45rem;
+    top: 10vh;
     filter: grayscale(20%);
     @media only screen and (max-width: 600px) { display: none; }
 }

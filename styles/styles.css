@@ -412,16 +412,16 @@ body {
   overflow-x: hidden;
 }
 
+.active {
+  font-weight: 900;
+}
+
 .txt__gray {
   color: #8D8D8D;
 }
 .txt__gray a {
   text-decoration: none;
   color: #8D8D8D;
-}
-
-.active {
-  font-weight: 900;
 }
 
 .txt__red {
@@ -446,6 +446,10 @@ body {
 
 .txt__teal {
   color: #31666B;
+}
+
+.txt__navy {
+  color: #335063;
 }
 
 footer {
@@ -614,7 +618,7 @@ nav a:hover {
 }
 
 .circle__navy {
-  background-color: #233846;
+  background-color: #335063;
 }
 
 .circle__red {
@@ -769,7 +773,7 @@ nav a:hover {
 }
 
 .bg__holidaze {
-  background-color: #1E313E;
+  background-color: #335063;
   height: 100vh;
   width: 50vw;
   position: absolute;
@@ -824,7 +828,7 @@ nav a:hover {
 }
 .holidaze__txt .button-container button {
   border-radius: 10px;
-  background: #1E313E;
+  background: #335063;
   border: none;
   outline: none;
   height: 3rem;
@@ -850,16 +854,16 @@ nav a:hover {
   }
 }
 
-#img__astronaut {
-  height: 90vh;
+#img__bryggen {
+  height: 80vh;
   position: absolute;
   right: 50vw;
-  margin-right: -38rem;
-  top: 5vh;
+  margin-right: -45rem;
+  top: 10vh;
   filter: grayscale(20%);
 }
 @media only screen and (max-width: 600px) {
-  #img__astronaut {
+  #img__bryggen {
     display: none;
   }
 }
