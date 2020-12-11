@@ -854,7 +854,7 @@ nav a:hover {
   }
 }
 
-#img__bryggen {
+#img__bed {
   height: 80vh;
   position: absolute;
   right: 50vw;
@@ -863,7 +863,7 @@ nav a:hover {
   filter: grayscale(20%);
 }
 @media only screen and (max-width: 600px) {
-  #img__bryggen {
+  #img__bed {
     display: none;
   }
 }
