@@ -54,8 +54,10 @@
 .circle__navy { background-color: #335063; }
 .circle__red { background-color: #A5161F; }
 .circle__orange { background-color: #ffa500; }
+.circle__light-pink { background-color: #EA4C89; }
 
-.circle__aqua, .circle__orange { //right
+
+.circle__aqua, .circle__orange, .circle__light-pink { //right
     text-align: right;
     .portfolio-item__h1 { 
         margin-left: -27rem; 

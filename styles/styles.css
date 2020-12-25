@@ -440,6 +440,10 @@ body {
   color: #D90F6D;
 }
 
+.txt__light-pink {
+  color: #EA4C89;
+}
+
 .txt__orange {
   color: #ffa500;
 }
@@ -629,28 +633,32 @@ nav a:hover {
   background-color: #ffa500;
 }
 
-.circle__aqua, .circle__orange {
+.circle__light-pink {
+  background-color: #EA4C89;
+}
+
+.circle__aqua, .circle__orange, .circle__light-pink {
   text-align: right;
 }
-.circle__aqua .portfolio-item__h1, .circle__orange .portfolio-item__h1 {
+.circle__aqua .portfolio-item__h1, .circle__orange .portfolio-item__h1, .circle__light-pink .portfolio-item__h1 {
   margin-left: -27rem;
 }
 @media only screen and (max-width: 600px) {
-  .circle__aqua .portfolio-item__h1, .circle__orange .portfolio-item__h1 {
+  .circle__aqua .portfolio-item__h1, .circle__orange .portfolio-item__h1, .circle__light-pink .portfolio-item__h1 {
     margin-left: -7rem;
   }
 }
-.circle__aqua .portfolio-item__p, .circle__orange .portfolio-item__p {
+.circle__aqua .portfolio-item__p, .circle__orange .portfolio-item__p, .circle__light-pink .portfolio-item__p {
   margin-left: -13rem;
 }
-.circle__aqua .portfolio-item__link, .circle__orange .portfolio-item__link {
+.circle__aqua .portfolio-item__link, .circle__orange .portfolio-item__link, .circle__light-pink .portfolio-item__link {
   margin-left: -5rem;
 }
-.circle__aqua .img__computer, .circle__orange .img__computer {
+.circle__aqua .img__computer, .circle__orange .img__computer, .circle__light-pink .img__computer {
   margin-left: -5rem;
 }
 @media only screen and (max-width: 600px) {
-  .circle__aqua .img__computer, .circle__orange .img__computer {
+  .circle__aqua .img__computer, .circle__orange .img__computer, .circle__light-pink .img__computer {
     margin-left: -10rem;
   }
 }
@@ -1159,6 +1167,102 @@ nav a:hover {
 }
 @media only screen and (max-width: 600px) {
   #img__bike {
+    display: none;
+  }
+}
+
+.bg__community-science-museum {
+  background-color: #EA4C89;
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+  .bg__community-science-museum {
+    display: none;
+  }
+}
+
+#community-science-museum {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  margin-left: 2rem;
+}
+
+.community-science-museum__txt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  margin-top: calc(50vh - 12.5rem);
+}
+.community-science-museum__txt h1 {
+  font-size: 3em;
+}
+@media only screen and (max-width: 600px) {
+  .community-science-museum__txt h1 {
+    font-size: 2em;
+  }
+}
+.community-science-museum__txt p {
+  max-width: 35vw;
+}
+@media only screen and (max-width: 600px) {
+  .community-science-museum__txt p {
+    max-width: 80vw;
+  }
+}
+.community-science-museum__txt .button-container {
+  flex-flow: row wrap;
+}
+.community-science-museum__txt .button-container i {
+  font-size: 1.8em;
+  color: #ffffff;
+}
+.community-science-museum__txt .button-container button {
+  border-radius: 10px;
+  background: #EA4C89;
+  border: none;
+  outline: none;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.community-science-museum__txt .button-container button:hover {
+  transform: scale(0.95);
+}
+.community-science-museum__txt .button-container button:active {
+  transform: scale(1.05);
+}
+
+.community-science-museum__img {
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media only screen and (max-width: 600px) {
+  .community-science-museum__img {
+    display: none;
+  }
+}
+
+#img__community-science-museum {
+  height: 90vh;
+  position: absolute;
+  right: 50vw;
+  margin-right: -32rem;
+  top: 5vh;
+  filter: drop-shadow(2px 2px 5px #c0c0c0);
+}
+@media only screen and (max-width: 600px) {
+  #img__community-science-museum {
     display: none;
   }
 }
