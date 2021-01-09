@@ -55,21 +55,38 @@
         button:active { transform: scale(1.05); }
     }
 }
-.game-of-dice__img {
-    display: flex;
-    flex-flow: column nowrap;
-    @media only screen and (max-width: 600px) { display: none; }
-    a:hover {
-        opacity: 0.8;
-    }
-}
-.fa-play-circle {
-    font-size: 20em;
-    color: #00ffff;
+.bubble-wrapper {
+
     position: absolute;
-    right: 50vw;
-    margin-right: -32rem;
-    top: 50vh;
-    margin-top: -10rem;
+    top: 45vh;
+    right: 20vw;
+}
+.fa-play {
+    color: #00ffff;
     @media only screen and (max-width: 600px) { display: none; }
+}
+.bubble {
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.15), -3px -3px 7px rgba(255,255,255,0.05);
+    border-radius: 50%;
+    transform: scale(4);
+    @media only screen and (max-width: 600px) { display: none; }
+    div {
+        background-color: #242424;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        margin: 2px;
+        user-select: none; //pevent text selection
+        cursor: pointer;
+    }
+    div:hover {
+        box-shadow: inset 3px 3px 7px rgba(0,0,0,0.15), inset -3px -3px 7px rgba(255,255,255,0.09);
+        transform: scale(0.99);
+    }
+    i:active { color: #00ffff; }
+    i:focus { color: #00ffff; }
 }
