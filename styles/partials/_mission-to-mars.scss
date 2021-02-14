@@ -1,5 +1,5 @@
 .bg__mission-to-mars {
-    background-color: #A5161F;
+    background-color: $mars-red;
     height: 100vh;
     width: 50vw;
     position: absolute;
@@ -22,6 +22,9 @@
     flex-flow: column nowrap;
     gap: 0.5rem;
     margin-top: calc(50vh - 12.5rem);
+    span {
+       color: $mars-red;
+    }
     h1 { 
         font-size: 3em; 
         @media only screen and (max-width: 600px) { font-size: 2em; }
@@ -38,7 +41,7 @@
         }
         button {
             border-radius: 10px;
-            background: #A5161F;
+            background: $mars-red;
             border: none;
             outline: none;
             height: 3rem;

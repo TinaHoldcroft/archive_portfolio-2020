@@ -21,7 +21,7 @@
     justify-content: space-between;
     flex-flow: column nowrap;
     gap: 0.5rem;
-    margin-top: calc(50vh - 12.5rem);
+    margin-top: calc(50vh - 15rem);
     h1 { 
         font-size: 3em; 
         @media only screen and (max-width: 600px) { font-size: 2em; }
@@ -31,7 +31,9 @@
         @media only screen and (max-width: 600px) { max-width: 80vw; }
     }
     .button-container {
+        display: flex;
         flex-flow: row wrap;
+        gap: 1.2rem;
         i {
             font-size: 1.8em;
             color: #ffffff;
@@ -43,8 +45,7 @@
             outline: none;
             height: 3rem;
             width: 3rem;
-            margin-right: 1rem;
-            margin-top: 2rem;
+            margin: 1rem 0;
             cursor: pointer;
         }
         button:hover { transform: scale(0.95); }
@@ -57,11 +58,27 @@
     @media only screen and (max-width: 600px) { display: none; }
 }
 #img__bed {
-    height: 80vh;
+    height: 70vh;
     position: absolute;
     right: 50vw;
     margin-right: -45rem;
-    top: 10vh;
+    top: 15vh;
     filter: grayscale(20%);
     @media only screen and (max-width: 600px) { display: none; }
+}
+.highlights {
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: row wrap;
+    max-width: 35vw;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    p {
+        color: $light-grey;
+        background-color: #eeeeee;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        font-size: 0.7em;
+        text-transform: uppercase;
+    }
 }
