@@ -5,78 +5,56 @@
     flex-flow: column nowrap;
     gap: 8.5rem;
     @media only screen and (max-width: 600px) { gap: 5rem; }
-}
-.circle {
-    height: 35rem;
-    width: 35rem;
-    border-radius: 50%;
-    box-shadow: 9px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
-    @media only screen and (max-width: 600px) { 
-        height: 20rem;
-        width: 20rem;
+    img {
+        width: 40rem;
+        position: absolute;
+        margin-top: 7rem;
+        left: 50vw;
+        z-index: 9;
+        &:hover { transform: scale(0.99); }
+        @media only screen and (max-width: 600px) { 
+            margin-top: 4.5rem;
+            width: 20rem;
+        }
     }
 }
-.img__computer {
-    width: 40rem;
-    position: absolute;
-    margin-top: 7rem;
-    left: 50vw;
-    z-index: 9;
-    @media only screen and (max-width: 600px) { 
-        margin-top: 4.5rem;
-        width: 20rem;
-    }
-}
-.img__computer:hover  { transform: scale(0.99); }
-.portfolio-item__h1 {
+.portfolio-title {
     position: absolute;
     left: 50vw;
     margin-top: 8rem;
     font-size: 1.6em;
     @media only screen and (max-width: 600px) { display: none; }
 }
-.portfolio-item__p {
+.portfolio-link {
     position: absolute;
     margin-top: 21rem;
     left: 50vw;
     font-size: 1.5em;
     z-index: 11;
     @media only screen and (max-width: 600px) { display: none; }
-    a {
-        text-decoration: none;
-        cursor: pointer;
-        color: #000000;
-    }
     a:hover { opacity: 0.5; }
 }
-.circle__aqua { background-color: #00ffff; }
-.circle__teal { background-color: #31666B; }
-.circle__navy { background-color: #335063; }
-.circle__red { background-color: #A5161F; }
-.circle__orange { background-color: #ffa500; }
-.circle__light-pink { background-color: #EA4C89; }
-
-
-.circle__aqua, .circle__orange, .circle__light-pink { //right
-    text-align: right;
-    .portfolio-item__h1 { 
-        margin-left: -27rem; 
-        @media only screen and (max-width: 600px) { margin-left: -7rem; }
-    }
-    .portfolio-item__p { margin-left: -13rem; }
-    .portfolio-item__link { margin-left: -5rem; }
-    .img__computer { 
-        margin-left: -5rem; 
-        @media only screen and (max-width: 600px) { margin-left: -10rem; }
-    }
+.circle__holidaze {
+    background-color: #335063; 
+    @include circle-left;
 }
-.circle__red, .circle__teal, .circle__navy { //left
-    text-align: left;
-    .portfolio-item__h1 { margin-left: 2rem; }
-    .portfolio-item__p { margin-left: 2rem; }
-    .portfolio-item__link { margin-left: 4rem; }
-    .img__computer { 
-        margin-left: -35rem; 
-        @media only screen and (max-width: 600px) { margin-left: -10rem; }
-    }
+.circle__game-of-dice {
+    background-color: #00ffff; 
+    @include circle-right;
+}
+.circle__mission-to-mars {
+    background-color: $mars-red; 
+    @include circle-left;
+}
+.circle__nice-cream {
+    background-color: $orange; 
+    @include circle-right;
+}
+.circle__re-cycle {
+    background-color: $teal; 
+    @include circle-left;
+}
+.circle__CSM {
+    background-color: $light-pink; 
+    @include circle-right;
 }

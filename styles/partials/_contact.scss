@@ -4,23 +4,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     z-index: -1;
     h1 {
         font-size: 3em;
         padding-top: 15rem;
         padding-left: 7rem;
         @media only screen and (max-width: 830px) { display: none; }
+        span { color: $pink; }
     }
 }
 .form-wrapper {
-    background-color: #ffffff;
+    background-color: $white;
     position: absolute;
     right: 15vw;
     top: 8rem;
     width: 22rem;
     height: 30rem;
-    border: solid #ffffff 3rem;
+    border: solid $white 3rem;
     z-index: 9;
     @media only screen and (max-width: 830px) { 
         top: 50vh;
@@ -32,36 +33,33 @@
 form {
     width: 100%;
     input, textarea {
+        background-color: $white;
         font-family: montserrat, sans-serif;
         font-weight: 700;
         font-size: 0.8em;
-        border-bottom: solid 1px #000000;
+        border-bottom: solid 1px $black;
         border-top: none;
         border-left: none;
         border-right: none;
         line-height: 2.5em;
-    }
-    ::placeholder {
-        color: #000000;
-        opacity: 1; 
-    }
-    textarea, input[type=text], input[type=email], input[type=phone] {
         width: 100%;
-        background-color: #ffffff;
         margin-top: 1rem;
     }
-    input[type=submit] {
-        background-color: #D90F6D;
-        color: #ffffff;
+    ::placeholder {
+        color: $black;
+        opacity: 1; 
+    }
+    button {
+        background-color: $pink;
+        color: $white;
         margin-top: 4rem;
         margin-left: 7rem;
-        border-bottom: none;
+        border: none;
         font-size: 1.5em;
         width: 75%;
         text-align: right;
         line-height: 0rem;
         padding: 1.5rem;
+        &:hover { opacity: 0.6; }
     }
-    input[type=submit]:active, input[type=submit]:focus { background-color: #ffffff; }
-    input[type=submit]:hover { opacity: 0.6; }
 }

@@ -17,7 +17,7 @@
 		<title>Tina Holdcroft | Contact</title> <!-- page title -->
 	</head>
 	
-	<body class="no-scroll">
+	<body>
 		<header>
 			<nav>
 				<a href="./index.html">Home</a>
@@ -28,19 +28,19 @@
 		</header>
 
 		<main id="contact">
-			<h1>Lets <span class="txt__pink">Talk</span>.</h1>
+			<h1>Lets <span>Talk</span>.</h1>
 			<div class="form-wrapper">
 				<form action="mailto:tmholdcroft@gmail.com?&subject=Lets%20Talk" method="POST" enctype="text/plain" target="_blank">
-					<input type="text" name="name" placeholder="Name" pattern="[A-Za-z ]{2,}" required> <!--2 or more characters-->
+					<input type="name" name="name" placeholder="Name" pattern="[A-Za-z ]{2,}" required> <!--2 or more characters-->
 					<input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 					<input type="phone" name="phone" placeholder="Phone" pattern="[0-9]{8,}" required> <!--numbers, 8 or more-->
 					<textarea type="text" name="message " placeholder="Message" pattern=".{3,}" required></textarea> <!--3 or more characters/numbers-->
-					<input type="submit" value="&#8594;">
+					<button type="submit">&#8594;</button>
 				</form>
 			</div>
 		</main>
 
-		<footer>
+		<footer class="contact-footer">
 			<div class="SoMe SoMe__contact">
 				<div><a title="GitHub" target="_blank" href="https://github.com/TinaHoldcroft"><i class="fab fa-github-alt"></i></a></div>
 				<div><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/tina-holdcroft"><i class="fa fa-linkedin"></i></a></div>

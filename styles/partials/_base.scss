@@ -1,6 +1,3 @@
-@import url("https://use.typekit.net/rkp1fwe.css");
-//font-family: century-gothic, sans-serif;
-//font-family: montserrat, sans-serif;
 * {
     margin: 0;
     padding: 0;
@@ -19,21 +16,10 @@ body {
 }
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-thumb { border-radius: 30px; }
-::-webkit-scrollbar-thumb:hover { background: #bdbdbd; }
+::-webkit-scrollbar-thumb:hover { background: $light-grey; }
 .active { font-weight: 900; }
-.txt__gray {
-    color: #8D8D8D;
-    a {
-        text-decoration: none;
-        color: #8D8D8D;
-    }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
 }
-.txt__bold { font-weight: 900; }
-.txt__aqua { color: #00ffff; }
-.txt__pink { color: #D90F6D; }
-.txt__light-pink { color: #EA4C89; }
-.txt__orange { color: #ffa500; }
-.txt__teal { color: #31666B; }
-.txt__navy { color: #335063; }
-$light-grey: #8d8d8d;
-$mars-red: #A5161F;

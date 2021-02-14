@@ -1,16 +1,9 @@
-//pages
+@import 'partials/typography';
+@import 'partials/mixins';
+@import 'partials/base';
 @import 'partials/index';
 @import 'partials/contact';
 @import 'partials/experience';
-//elements
-@import 'partials/base';
-@import 'partials/footer';
 @import 'partials/navigation';
-//portfolio
 @import 'partials/portfolio';
-@import 'partials/mission-to-mars';
-@import 'partials/holidaze';
-@import 'partials/game-of-dice';
-@import 'partials/nice-cream';
-@import 'partials/re-cycle';
-@import 'partials/community';
+@import 'partials/portfolio-detail';

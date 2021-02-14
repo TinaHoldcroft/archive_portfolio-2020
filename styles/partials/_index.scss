@@ -43,6 +43,7 @@
     h1 {
         font-size: 2.5em;
         @media only screen and (max-width: 600px) { font-size: 2em; }
+        span { color: $pink; }
     }
     p { line-height: 1.5em; }
     .txt__gray { 

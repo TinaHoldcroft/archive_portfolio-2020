@@ -1,0 +1,156 @@
+.portfolio-detail__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-left: 2rem;
+}
+.highlights {
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: row wrap;
+    max-width: 35vw;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    p {
+        color: $light-grey;
+        background-color: #eeeeee;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        font-size: 0.7em;
+        text-transform: uppercase;
+    }
+}
+.bg__community-science-museum { @include portfolio-detail__bg; }
+.bg__re-cycle {
+    @include portfolio-detail__bg;
+    background-color: #31666B;
+    width: 40vw!important;
+}
+.bg__nice-cream {
+    @include portfolio-detail__bg;
+    background-color: $orange;
+}
+.bg__mission-to-mars {
+    background-color: $mars-red;
+    @include portfolio-detail__bg;
+}
+.bg__holidaze {
+    @include portfolio-detail__bg;
+    background-color: #335063;
+}
+.bg__game-of-dice {
+    @include portfolio-detail__bg;
+    background-color: #242424;
+}
+.community-science-museum__txt {
+    @include portfolio-detail__txt;
+    span { color: $light-pink; }
+    button { background: #EA4C89; }
+}
+.re-cycle__txt {
+    @include portfolio-detail__txt;
+    span { color: $teal; }
+    button { background: #31666B; }
+}
+.nice-cream__txt {
+    @include portfolio-detail__txt;
+    span { color: $orange; } 
+    button { background: $orange; }
+}
+.mission-to-mars__txt {
+    @include portfolio-detail__txt;
+    span { color: $mars-red; }
+    button { background: $mars-red; }
+}
+.holidaze__txt {
+    @include portfolio-detail__txt;
+    span { color: $navy; }
+    button { background: #335063; }
+}
+.game-of-dice__txt {
+    @include portfolio-detail__txt;
+    button i { color: #242424!important; }
+}
+.community-science-museum__img {
+    @include portfolio-detail__img;
+    img {
+        height: 92vh;
+        right: 50vw;
+        margin-right: -40rem;
+        top: 5vh;
+        filter: drop-shadow(2px 2px 5px #c0c0c0);
+    }
+}
+.re-cycle__img {
+    @include portfolio-detail__img;
+    img {
+        height: 65vh;
+        right: 0vw;
+        top: 17.5vh;
+    }
+}
+.nice-cream__img {
+    @include portfolio-detail__img;
+    img {
+        height: 90vh;
+        right: 50vw;
+        margin-right: -32rem;
+        top: 5vh;
+        filter: drop-shadow(2px 2px 5px #c0c0c0);
+    }
+}
+.mission-to-mars__img {
+    @include portfolio-detail__img;
+    img {
+        height: 90vh;
+        right: 50vw;
+        margin-right: -38rem;
+        top: 5vh;
+        filter: grayscale(20%);
+   }
+}
+.holidaze__img {
+    @include portfolio-detail__img;
+    img {
+        height: 70vh;
+        right: 50vw;
+        margin-right: -45rem;
+        top: 15vh;
+        filter: grayscale(20%);
+    }
+}
+.bubble-wrapper {
+    position: absolute;
+    top: 45vh;
+    right: 20vw;
+}
+.fa-play {
+    color: $aqua;
+    @media only screen and (max-width: 600px) { display: none; }
+}
+.bubble {
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.15), -3px -3px 7px rgba(255,255,255,0.05);
+    border-radius: 50%;
+    transform: scale(4);
+    @media only screen and (max-width: 600px) { display: none; }
+    div {
+        background-color: #242424;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        margin: 2px;
+        user-select: none; //pevent text selection
+        cursor: pointer;
+        &:hover {
+            box-shadow: inset 3px 3px 7px rgba(0,0,0,0.15), inset -3px -3px 7px rgba(255,255,255,0.09);
+            transform: scale(0.99);
+        }
+    }
+    i:active { color: $aqua; }
+    i:focus { color: $aqua; }
+}
