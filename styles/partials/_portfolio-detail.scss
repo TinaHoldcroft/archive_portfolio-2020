@@ -76,8 +76,7 @@
     @include portfolio-detail__img;
     img {
         height: 92vh;
-        right: 50vw;
-        margin-right: -40rem;
+        right: 3vw;
         top: 5vh;
         filter: drop-shadow(2px 2px 5px #c0c0c0);
     }
@@ -114,8 +113,7 @@
     @include portfolio-detail__img;
     img {
         height: 70vh;
-        right: 50vw;
-        margin-right: -45rem;
+        right: 0vw;
         top: 15vh;
         filter: grayscale(20%);
     }
