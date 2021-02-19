@@ -542,8 +542,11 @@ footer .SoMe {
 .portfolio-title {
   position: absolute;
   left: 50vw;
-  margin-top: 8rem;
+  margin-top: 10rem;
   font-size: 1.6em;
+}
+.portfolio-title p {
+  font-weight: 900;
 }
 @media only screen and (max-width: 600px) {
   .portfolio-title {
@@ -553,7 +556,7 @@ footer .SoMe {
 
 .portfolio-link {
   position: absolute;
-  margin-top: 21rem;
+  margin-top: 20rem;
   left: 50vw;
   font-size: 1.5em;
   z-index: 11;
