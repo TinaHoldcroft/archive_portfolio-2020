@@ -30,23 +30,25 @@
 		<main id="contact">
 			<h1>Lets <span>Talk</span>.</h1>
 			<div class="form-wrapper">
-				<form action="mailto:tmholdcroft@gmail.com?&subject=Lets%20Talk" method="POST" enctype="text/plain" target="_blank">
-					<input type="name" name="name" placeholder="Name" pattern="[A-Za-z ]{2,}" required> <!--2 or more characters-->
-					<input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-					<input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{8,}" required> <!--numbers, 8 or more-->
-					<textarea type="text" name="message " placeholder="Message" pattern=".{3,}" required></textarea> <!--3 or more characters/numbers-->
+				<form action="mailto:tmholdcroft@gmail.com?&subject=Lets%20Talk" method="POST" enctype="multipart/form-data" target="_blank">
+					<div class="input-group">
+						<input type="text" name="name" placeholder="Name" pattern="[A-Za-z ]{2,}" required> <!--2 or more characters-->
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="input-group">
+						<input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="input-group">
+						<input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{8,}" required> <!--numbers, 8 or more-->
+						<i class="fas fa-phone"></i>
+					</div>
+					<div class="input-group">
+						<textarea type="text" name="message" placeholder="Message" pattern=".{3,}" required></textarea> <!--3 or more characters/numbers-->
+					</div>
 					<button type="submit">&#8594;</button>
 				</form>
 			</div>
 		</main>
-
-		<footer class="contact-footer">
-			<div class="SoMe SoMe__contact">
-				<div><a title="GitHub" target="_blank" href="https://github.com/TinaHoldcroft"><i class="fab fa-github-alt"></i></a></div>
-				<div><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/tina-holdcroft"><i class="fa fa-linkedin"></i></a></div>
-				<div><a title="Codepen" target="_blank" href="https://codepen.io/tmholdcroft"><i class="fab fa-codepen"></i></a></div>
-				<div><a title="Instagram" target="_blank" href="https://www.instagram.com/tmholdcroft/"><i class="fab fa-instagram"></i></a></div>	
-			</div>
-        </footer>
 	</body>	
 </html>

@@ -5,8 +5,12 @@ function timeline() {
 	var event = document.querySelectorAll('.timeline li');
 	for(i in event){
 		if(event[i].offsetTop < position) {
-			event[i].classList.add('visible'); } 
+			event[i].classList.add('visible'); 
+		} 
 		else {
-			event[i].classList.remove('visible'); } } }
+			event[i].classList.remove('visible'); 
+		} 
+	} 
+}
 			
 timeline();

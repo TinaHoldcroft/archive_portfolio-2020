@@ -165,29 +165,39 @@ a {
   position: absolute;
   right: 15vw;
   top: 8rem;
-  width: 22rem;
+  width: 28rem;
   height: 30rem;
   border: solid #ffffff 3rem;
   z-index: 9;
+  border-radius: 30px;
+  box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
+  padding: 1rem 2rem;
 }
 @media only screen and (max-width: 830px) {
   .form-wrapper {
-    top: 50vh;
-    margin-top: -15rem;
-    right: 50vw;
-    margin-right: -11rem;
+    width: 90vw;
+    right: 5vw;
+    padding: 0rem;
   }
 }
 
 form {
   width: 100%;
 }
+form .input-group {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}
+form .input-group i {
+  margin-top: 1.7rem;
+  margin-right: 1rem;
+}
 form input, form textarea {
   background-color: #ffffff;
   font-family: montserrat, sans-serif;
-  font-weight: 700;
   font-size: 0.8em;
   border-bottom: solid 1px #242424;
+  color: #242424;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -195,15 +205,22 @@ form input, form textarea {
   width: 100%;
   margin-top: 1rem;
 }
+form input:focus, form textarea:focus {
+  border-bottom: solid 1px #D90F6D;
+}
+form input:focus + i {
+  color: #D90F6D;
+}
 form ::placeholder {
   color: #242424;
   opacity: 1;
+  text-transform: uppercase;
 }
 form button {
   background-color: #D90F6D;
   color: #ffffff;
   margin-top: 4rem;
-  margin-left: 7rem;
+  margin-left: 9.5rem;
   border: none;
   font-size: 1.5em;
   width: 75%;
@@ -211,8 +228,13 @@ form button {
   line-height: 0rem;
   padding: 1.5rem;
 }
-form button:hover {
+form button:hover, form button:focus {
   opacity: 0.6;
+}
+@media only screen and (max-width: 830px) {
+  form button {
+    margin-left: 6.6rem;
+  }
 }
 
 #experience-body {
@@ -260,17 +282,17 @@ form button:hover {
     -webkit-backface-visibility: hidden;
   }
 }
-.card-container:hover {
+.card-container:hover, .card-container:focus {
   z-index: 9;
 }
 
-.card-container:hover .cards {
+.card-container:hover .cards, .card-container:focus .cards {
   transform: rotateY(180deg);
   width: calc(100% + 8rem);
   height: calc(100% + 17rem);
 }
 @media only screen and (max-width: 600px) {
-  .card-container:hover .cards {
+  .card-container:hover .cards, .card-container:focus .cards {
     width: calc(100% + 4rem);
     height: calc(100% + 10rem);
   }
@@ -461,7 +483,7 @@ nav a {
     margin-left: 1.5rem;
   }
 }
-nav a:hover {
+nav a:hover, nav a:focus {
   opacity: 0.6;
 }
 
@@ -915,8 +937,11 @@ footer .SoMe {
   margin-top: 2rem;
   cursor: pointer;
 }
-.community-science-museum__txt .button-container button:hover {
+.community-science-museum__txt .button-container button:hover, .community-science-museum__txt .button-container button:focus {
   transform: scale(0.95);
+}
+.community-science-museum__txt .button-container button:hover i, .community-science-museum__txt .button-container button:focus i {
+  opacity: 0.7;
 }
 .community-science-museum__txt .button-container button:active {
   transform: scale(1.05);
@@ -969,8 +994,11 @@ footer .SoMe {
   margin-top: 2rem;
   cursor: pointer;
 }
-.re-cycle__txt .button-container button:hover {
+.re-cycle__txt .button-container button:hover, .re-cycle__txt .button-container button:focus {
   transform: scale(0.95);
+}
+.re-cycle__txt .button-container button:hover i, .re-cycle__txt .button-container button:focus i {
+  opacity: 0.7;
 }
 .re-cycle__txt .button-container button:active {
   transform: scale(1.05);
@@ -1023,8 +1051,11 @@ footer .SoMe {
   margin-top: 2rem;
   cursor: pointer;
 }
-.nice-cream__txt .button-container button:hover {
+.nice-cream__txt .button-container button:hover, .nice-cream__txt .button-container button:focus {
   transform: scale(0.95);
+}
+.nice-cream__txt .button-container button:hover i, .nice-cream__txt .button-container button:focus i {
+  opacity: 0.7;
 }
 .nice-cream__txt .button-container button:active {
   transform: scale(1.05);
@@ -1077,8 +1108,11 @@ footer .SoMe {
   margin-top: 2rem;
   cursor: pointer;
 }
-.mission-to-mars__txt .button-container button:hover {
+.mission-to-mars__txt .button-container button:hover, .mission-to-mars__txt .button-container button:focus {
   transform: scale(0.95);
+}
+.mission-to-mars__txt .button-container button:hover i, .mission-to-mars__txt .button-container button:focus i {
+  opacity: 0.7;
 }
 .mission-to-mars__txt .button-container button:active {
   transform: scale(1.05);
@@ -1131,8 +1165,11 @@ footer .SoMe {
   margin-top: 2rem;
   cursor: pointer;
 }
-.holidaze__txt .button-container button:hover {
+.holidaze__txt .button-container button:hover, .holidaze__txt .button-container button:focus {
   transform: scale(0.95);
+}
+.holidaze__txt .button-container button:hover i, .holidaze__txt .button-container button:focus i {
+  opacity: 0.7;
 }
 .holidaze__txt .button-container button:active {
   transform: scale(1.05);
@@ -1185,8 +1222,11 @@ footer .SoMe {
   margin-top: 2rem;
   cursor: pointer;
 }
-.game-of-dice__txt .button-container button:hover {
+.game-of-dice__txt .button-container button:hover, .game-of-dice__txt .button-container button:focus {
   transform: scale(0.95);
+}
+.game-of-dice__txt .button-container button:hover i, .game-of-dice__txt .button-container button:focus i {
+  opacity: 0.7;
 }
 .game-of-dice__txt .button-container button:active {
   transform: scale(1.05);
@@ -1354,7 +1394,7 @@ footer .SoMe {
   user-select: none;
   cursor: pointer;
 }
-.bubble div:hover {
+.bubble div:hover, .bubble div:focus {
   box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.15), inset -3px -3px 7px rgba(255, 255, 255, 0.09);
   transform: scale(0.99);
 }
