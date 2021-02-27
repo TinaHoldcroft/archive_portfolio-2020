@@ -10,7 +10,7 @@
         background-color: $pink;
         position: absolute;
         top: 14rem;
-        right: 43.5vw;
+        right: 36rem;
         transform: rotate(-90deg);
         border-radius: 10px 10px 0 0;
         padding: 1rem;
@@ -27,7 +27,7 @@
 .form-wrapper {
     background-color: $white;
     position: absolute;
-    right: 12.5vw;
+    right: 10rem;
     top: 8rem;
     width: 90vw;
     max-width: 30rem;
@@ -76,7 +76,7 @@ form {
         background-color: $pink;
         color: $white;
         margin-top: 2rem;
-        margin-left: 30%;
+        margin-left: 1.75rem;
         border: 3px solid $pink;
         border-radius: 10px;
         text-transform: uppercase;
@@ -85,11 +85,11 @@ form {
         font-weight: 300;
         padding: 0.5rem 3rem;
         letter-spacing: 0.2em;
+        width: 93%;
         &:hover, &:focus { transform: scale(1.03); }
         :active {
             color: $pink;
             background-color: transparent;
         }
-        @media only screen and (max-width: 830px) { margin-left: 6.6rem; }
     }
 }

@@ -150,7 +150,7 @@ a {
   background-color: #D90F6D;
   position: absolute;
   top: 14rem;
-  right: 43.5vw;
+  right: 36rem;
   transform: rotate(-90deg);
   border-radius: 10px 10px 0 0;
   padding: 1rem;
@@ -167,7 +167,7 @@ a {
 .form-wrapper {
   background-color: #ffffff;
   position: absolute;
-  right: 12.5vw;
+  right: 10rem;
   top: 8rem;
   width: 90vw;
   max-width: 30rem;
@@ -224,7 +224,7 @@ form button {
   background-color: #D90F6D;
   color: #ffffff;
   margin-top: 2rem;
-  margin-left: 30%;
+  margin-left: 1.75rem;
   border: 3px solid #D90F6D;
   border-radius: 10px;
   text-transform: uppercase;
@@ -233,6 +233,7 @@ form button {
   font-weight: 300;
   padding: 0.5rem 3rem;
   letter-spacing: 0.2em;
+  width: 93%;
 }
 form button:hover, form button:focus {
   transform: scale(1.03);
@@ -240,11 +241,6 @@ form button:hover, form button:focus {
 form button :active {
   color: #D90F6D;
   background-color: transparent;
-}
-@media only screen and (max-width: 830px) {
-  form button {
-    margin-left: 6.6rem;
-  }
 }
 
 #experience-body {
