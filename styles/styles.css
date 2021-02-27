@@ -146,36 +146,39 @@ a {
   height: 100vh;
   z-index: -1;
 }
-#contact h1 {
-  font-size: 3em;
-  padding-top: 15rem;
-  padding-left: 7rem;
+#contact .SoMe {
+  background-color: #D90F6D;
+  position: absolute;
+  top: 14rem;
+  right: 43.5vw;
+  transform: rotate(-90deg);
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+  box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
 }
-@media only screen and (max-width: 830px) {
-  #contact h1 {
-    display: none;
-  }
+#contact .SoMe i {
+  color: #ffffff;
 }
-#contact h1 span {
-  color: #D90F6D;
+#contact .SoMe i:hover {
+  background-color: transparent;
+  transform: scale(2) rotate(90deg);
 }
 
 .form-wrapper {
   background-color: #ffffff;
   position: absolute;
-  right: 15vw;
+  right: 12.5vw;
   top: 8rem;
-  width: 28rem;
-  height: 30rem;
+  width: 90vw;
+  max-width: 30rem;
   border: solid #ffffff 3rem;
   z-index: 9;
   border-radius: 30px;
   box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 @media only screen and (max-width: 830px) {
   .form-wrapper {
-    width: 90vw;
     right: 5vw;
     padding: 0rem;
   }
@@ -187,6 +190,7 @@ form {
 form .input-group {
   display: flex;
   flex-flow: row-reverse nowrap;
+  margin-bottom: 1rem;
 }
 form .input-group i {
   margin-top: 1.7rem;
@@ -208,7 +212,7 @@ form input, form textarea {
 form input:focus, form textarea:focus {
   border-bottom: solid 1px #D90F6D;
 }
-form input:focus + i {
+form input:focus + i, form textarea:focus + i {
   color: #D90F6D;
 }
 form ::placeholder {
@@ -219,17 +223,23 @@ form ::placeholder {
 form button {
   background-color: #D90F6D;
   color: #ffffff;
-  margin-top: 4rem;
-  margin-left: 9.5rem;
-  border: none;
-  font-size: 1.5em;
-  width: 75%;
-  text-align: right;
-  line-height: 0rem;
-  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 30%;
+  border: 3px solid #D90F6D;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.5rem 3rem;
+  letter-spacing: 0.2em;
 }
 form button:hover, form button:focus {
-  opacity: 0.6;
+  transform: scale(1.03);
+}
+form button :active {
+  color: #D90F6D;
+  background-color: transparent;
 }
 @media only screen and (max-width: 830px) {
   form button {
