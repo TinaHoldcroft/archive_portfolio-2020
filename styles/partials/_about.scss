@@ -1,0 +1,197 @@
+#experience-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row nowrap;
+}
+.experience {
+    display: flex;
+    flex-flow: row nowrap;
+    @media only screen and (max-width: 980px) { flex-flow: column;}
+}
+.card-wrapper {
+    display: flex;
+    flex-flow: column-reverse;
+    margin: 5rem;
+}
+.card-container {
+    background-color: transparent;
+    width: 20rem;
+    height: 10rem;
+    perspective: 100rem;
+    margin: 1.5rem;
+}
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transition: width 0.5s, height 0.9s, transform 1.4s;
+}
+@-moz-document url-prefix() {
+    .cards {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+}
+.card-container:hover, .card-container:focus { z-index: 9; }
+.card-container:hover .cards, .card-container:focus .cards {
+    transform: rotateY(180deg);
+    width: calc(100% + 10rem);
+    height: calc(100% + 8rem);
+    @media only screen and (max-width: 600px) { 
+        width: calc(100% + 4rem);
+        height: calc(100% + 10rem);
+    }
+ }
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 30px;
+    box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
+    i {
+        font-size: 7em;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: #ffffff;
+    }
+}
+.card__coding { background-color: #870079; }
+.card__design { background-color: #D90F6D; }
+.card__project { background-color: #FF6759; }
+.card-back {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 30px;
+    transform: rotateY(180deg);
+    margin-left: 5.5rem;
+    margin-top: -5vh;
+    box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
+    @media only screen and (max-width: 600px) { margin-left: 2rem; }
+    p {
+        font-size: 0.8em;
+        max-width: 75%;
+        margin-bottom: 1rem;
+    }
+    h2 { margin-bottom: 1rem; }
+    .fab { font-size: 3em; }
+    a:hover { opacity: 0.6; }
+    .github-square_code { color: #870079; }
+    .github-square__design { color: #D90F6D; }
+    .fa-linkedin { color: #FF6759; }
+}
+#contact {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    @media only screen and (max-width: 980px) { margin-left: 2rem; }
+    .SoMe {
+        background-color: $pink;
+        transform: rotate(90deg);
+        border-radius: 10px 10px 0 0;
+        padding: 1rem;
+        box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
+        margin-left: -3.85rem;
+        margin-top: -14rem;
+        @media only screen and (max-width: 980px) {display: none; }
+        i {
+            color: $white;
+            &:hover {
+                background-color: transparent;
+                transform: scale(2) rotate(-90deg);
+            }
+        }
+    }
+}
+.form-wrapper {
+    @media only screen and (max-width: 980px) { 
+        margin-top: -2.5rem;
+        margin-bottom: 2rem;
+        padding: 0rem;
+    }
+    margin-left: 5rem;
+    background-color: $white;
+    border: solid $white 3rem;
+    z-index: 9;
+    border-radius: 30px;
+    box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
+    padding: 1rem;
+}
+form {
+    width: 100%;
+    .input-group {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        margin-bottom: 1rem;
+        i {
+            margin-top: 1.7rem;
+            margin-right: 1rem;
+        }
+    }
+    input, textarea {
+        background-color: $white;
+        color: $black;
+        font-family: montserrat, sans-serif;
+        font-size: 0.8em;
+        border-bottom: solid 1.5px $light-grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        line-height: 2.5em;
+        width: 18rem;
+        margin-top: 1rem;
+        @media only screen and (max-width: 980px) { width: 11rem; }
+        &:focus { 
+            border-bottom: solid 2px $pink; 
+            outline: none;
+        }
+    }
+    input:focus + i,  textarea:focus + i  { color: $pink; }
+    ::placeholder {
+        color: $black;
+        opacity: 1; 
+        text-transform: uppercase;
+    }
+    .button-group {
+        display: flex;
+        justify-content: flex-end
+    }
+    button {
+        background-color: $white;
+        color: $pink;
+        margin-top: 2rem;
+        margin-left: 1.75rem;
+        border: 3px solid $pink;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 600;
+        padding: 0.5rem 3rem;
+        letter-spacing: 0.2em;
+        &:hover, &:focus { 
+            background-color: $pink;
+            color: $white;
+        }
+        &:focus, &:active { 
+            transform: scale(1.03);
+            outline: none;
+        }
+    }
+}
